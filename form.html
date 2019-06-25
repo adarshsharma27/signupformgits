@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+        }
+    .main-container{
+    width: 550px;
+    height: 360px;
+    margin: 0 auto;
+    background-color: lightgray; 
+    display: flex;
+    font-family:'Roboto',sans-serif;
+    box-shadow: 0px 2px 8px 5px lightslategrey;
+    }
+
+    .form{
+        width: 275px;
+        height: 360px;
+        margin: 0 auto;
+    background-color:#FFFEFF; 
+    text-align: center;
+    }
+    input{
+        font-size:16px;
+    border: 1px solid #B4B2B4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    line-height: 45px;
+    outline: none;
+    caret-color: #17A087;
+    }
+    ::placeholder{
+        color:#B1B7B4;
+        line-height: -20px;
+    }
+    .form button{
+        width:111px;
+        height:30px;
+        background-color:#17A087;
+        color:white;
+        border:1px solid #17A087;
+        margin-top: 25px;
+        border-radius: 6px;
+        word-spacing: 1px;
+
+    }
+    .social-media{
+        width: 275px;
+        height: 360px;
+        margin: 0 auto;
+        text-align: center;
+        background-image:url("https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+    
+    }
+   .facebook{
+       width:202px;
+        height:35px;
+        background-color:#334F8F;
+        color:white;
+        border:1px solid #334F8F;
+        margin-top: 25px;
+   }
+   .twitter{
+       width:202px;
+        height:35px;
+        background-color:#56ACF0;
+        color:white;
+        border:1px solid #56ACF0;
+        margin-top: 25px;
+   }
+   .google{
+       width:202px;
+        height:35px;
+        background-color:#DF4A3B;
+        color:white;
+        border:1px solid #DF4A3B;
+        margin-top: 25px;
+   }
+   input:focus::placeholder{
+     transform:translateY(40%);
+     transition:transform 1s ease;
+   }
+   ::selection{
+    background-color:#17A087;
+   }
+    </style>
+</head>
+<body>
+    <!-- container for left side st-->
+    <div class="main-container">
+        <div class="form">
+            <h4 style="letter-spacing: 1px;color:#464E5E;">Sign up</h4>
+             <form>
+                 <input type="text" placeholder="Username">
+                 <input type="text" placeholder="E-mail">
+                 <input type="text" placeholder="Password">
+                 <input type="text" placeholder="Retypepassword">
+                 <button>Sign Me Up</button>
+
+            </form>
+        </div>
+        <div class="social-media">
+            <h4 style="color:white;letter-spacing: 1px;"> Sign up with Socail media</h4>
+
+            <button class="facebook">Log in with Facebook</button>
+            <button class="twitter">Log in with Twitter</button>
+            <button class="google">Log in with Google</button>
+        
+        </div>
+    </div>
+</body>
+</html>
